@@ -19,18 +19,15 @@ body{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background-color: var(--grey);
+    /* background-color: var(--grey);   */
+    background-image: url("./dccl--responsive-contact-page/bg-image.svg");
+    background-repeat: no-repeat;
+    background-size: cover ;
    
 }
 .container{
     padding: 20px 40px;
-    background-image: url("./dccl--responsive-contact-page/bg-image.svg");
-    background-repeat: no-repeat;
-   margin: 20px 0;
-    width: 1200px;
-
 }
-
 .title{
     text-align: center;
     padding: 50px 200px;
@@ -38,15 +35,14 @@ body{
     
 }
 .title > h1{
-    font-size: 55px;
+    font-size: 75px;
     padding-bottom: 20px;
 }
-.title > p{.title{
+.title > p{
     text-align: center;
-    padding: 50px 250px;
+    padding: 20px 40px;
     color: var(--very-white);
-    
-}
+
     font-size: 35px;
 }
 .box{
@@ -115,7 +111,7 @@ body{
 }
 .sale{
     margin: 20px 50px;
-    width: 620px;
+    width: 770px;
     padding: 20px;
     font-size: 20px;
     border-radius: 10px;
@@ -141,6 +137,9 @@ body{
     }
     .title > p{
         font-size: 25px;
+    }
+    .sale{
+        width: 620px;
     }
 
 }
@@ -204,6 +203,7 @@ body{
         }
         .box{
             border-radius: 10px;
+            
         }
        .name{
         padding: 10px;
