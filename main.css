@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+:root{
+    --purple: #4036A9;
+    --black: #111729;
+    --grey: #CDD5E0;
+    --white: #F8FAFC;
+    --very-white: #FFFFFF
+}
+*{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--grey);
+   
+}
+.container{
+    padding: 20px 40px;
+    background-image: url("./dccl--responsive-contact-page/bg-image.svg");
+    background-repeat: no-repeat;
+   margin: 20px 0;
+    width: 1200px;
+
+}
+
+.title{
+    text-align: center;
+    padding: 50px 200px;
+    color: var(--very-white);
+    
+}
+.title > h1{
+    font-size: 55px;
+    padding-bottom: 20px;
+}
+.title > p{.title{
+    text-align: center;
+    padding: 50px 250px;
+    color: var(--very-white);
+    
+}
+    font-size: 35px;
+}
+.box{
+    margin: 20px 200px;
+    border-radius: 20px;
+    background-color: rgba(195, 194, 194, 0.5);
+    
+   
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+   
+}
+.name-1 {
+    display: flex;
+    flex-direction: column;
+}
+.name-1 > label, .name-3 > label, .text-area> label{
+    padding: 10px 0;
+    color: var(--white);
+}
+.name-1 > input{
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+}
+.name-1 > input::placeholder{
+    color: var(--grey);
+}
+
+.name-2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+.name-3{
+    display: flex;
+    flex-direction: column;
+}
+.name-3 > button {
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--very-white);
+   
+    font-size: 16px;
+    font-weight: 600;
+}
+.text-area{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+}
+.text-area > textarea{
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.sale{
+    margin: 20px 50px;
+    width: 620px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    color: var(--purple);
+    font-weight: 600;
+}
+.sale:hover{
+    color: var(--white);
+    background-color: var(--purple);
+    cursor: pointer;
+}
+@media screen and (max-width: 1200px){
+    .container{
+        width: 1000px;
+    }
+    .box{
+        margin: 0px 100px;
+    }
+    .title > h1{
+        font-size: 40px;
+       
+    }
+    .title > p{
+        font-size: 25px;
+    }
+
+}
+@media screen and (max-width: 1000px){
+    .container{
+        width: 800px;
+    }
+    .box{
+        margin: 0px;
+    }
+    .title{
+       
+        padding: 50px 100px;
+      
+        
+    }
+    .title > h1{
+        font-size: 40px;
+       
+    }
+    .title > p{
+        font-size: 25px;
+        
+    }
+    }
+
+    @media screen and (max-width: 800px){
+      
+           
+        .container{
+            width: 600px;
+            
+        }
+       .name{
+        display: block;
+       }
+       .name-2{
+        display: block;
+       }
+        .title{
+            padding: 50px 20px;
+        }
+        .title > h1{
+            font-size: 40px;
+           
+        }
+        .title > p{
+            font-size: 15px;
+            
+        }
+        .name-1 > input , .name-3 > button, .sale{
+            width: 420px;
+        }
+    }
+    @media screen and (max-width: 600px){
+      
+           
+        .container{
+            width: 400px;
+            
+        }
+        .box{
+            border-radius: 10px;
+        }
+       .name{
+        padding: 10px;
+       }
+       .name-2{
+        padding: 10px;
+       }
+        .title{
+            padding: 50px 20px;
+        }
+        .title > h1{
+            font-size: 40px;
+           
+        }
+        .title > p{
+            font-size: 15px;
+            
+        }
+        .text-area{
+            padding: 10px;
+        }
+        .sale{
+            margin: 10px;
+            width: 300px;
+        }
+        .name-1 > input , .name-3 > button{
+            width: 300px;
+        }
+    }
+
+    @media screen and (max-width: 400px){
+      
+           
+        .container{
+            width: 300px;
+            
+        }
+        .box{
+            border-radius: 10px;
+        }
+       .name{
+        padding: 10px;
+       }
+       .name-2{
+        padding: 10px;
+       }
+        .title{
+            padding: 50px 0px;
+        }
+        .title > h1{
+            font-size: 30px;
+           
+        }
+        .title > p{
+            font-size: 15px;
+            
+        }
+        .text-area{
+            padding: 10px;
+        }
+        .sale{
+            margin: 10px;
+            width: 200px;
+            font-size: 15px;
+        }
+        .name-1 > input , .name-3 > button{
+            width: 200px;
+        }
+    }
